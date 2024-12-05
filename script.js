@@ -11,10 +11,16 @@ const onProgress = (event) => {
     progressBar.classList.remove('hide');
   }
 
-  $(".Hotspot").on("click", function () {
+  $(".Hotspot-1").on("click", function () {
     console.log("You clicked on a hotspot");
-    $(".Hotspot").hide();
-    $(".HotspotAnnotation").hide();
+    $(".Hotspot-1").hide();
+    $(".HotspotAnnotation-1").hide();
+    Animation.play();
+  });
+  $(".Hotspot-2").on("click", function () {
+    console.log("You clicked on a hotspot");
+    $(".Hotspot-2").hide();
+    $(".HotspotAnnotation-2").hide();
   });
 
   $("#overlay").on("click", function () {
