@@ -17,9 +17,10 @@ const onProgress = (event) => {
   $(".hotspot-1").on("click", function () {
   });
 
-  $("#overlay", "#overlay-content").on("click", function () {
-    ("#overlay").fadeToggle();
-    ("#overlay-content").fadeToggle();
+  $("#overlay").on("click", function () {
+    console.log("clicked");
+    $("#overlay").hide();
+    $("#overlay-content").hide();
   });
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
