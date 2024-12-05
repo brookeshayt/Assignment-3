@@ -37,7 +37,8 @@ body {
   text-align: center;
 }
 
-model-viewer {
+/* First model */
+model-1 {
   width: 100%;
   height: 90%;
   background-color: #ffffff;
@@ -199,4 +200,11 @@ model-viewer[ar-status="session-started"]>#ar-prompt {
 
 model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
+}
+
+/* Second model */
+model-2 {
+  width: 100%;
+  height: 90%;
+  background-color: #ffffff;
 }
