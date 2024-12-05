@@ -202,6 +202,7 @@ model-viewer {
   from {
     transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg);
   }
+
   to {
     transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg);
   }
@@ -211,6 +212,7 @@ model-viewer {
   from {
     transform: translateX(100px);
   }
+
   to {
     transform: translateX(-100px);
   }
@@ -238,3 +240,5 @@ model-2 {
   height: 90%;
   background-color: #ffffff;
 }
+
+footer {}
