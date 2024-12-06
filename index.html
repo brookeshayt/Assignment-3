@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <p> Some 3D models found on Pixabay and TurboSquid </p>
+  <p> Some 3D models found on TurboSquid </p>
   <div class="overlay" id="overlay">
     <div class="overlay-content" id="overlay-content">
       <h1>Survive the Night</h1>
@@ -19,9 +19,9 @@
     </div>
   </div>
   <!-- <model-viewer> HTML element -->
-  <model-viewer class="model" src="assets/Cabin.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-    tone-mapping="neutral" poster="poster.webp" shadow-intensity="2" camera-orbit="90.87deg 84.89deg 39.89m"
-    field-of-view="12deg">
+  <model-viewer class="model" id="model-1" src="assets/Cabin.glb" ar ar-modes="webxr scene-viewer quick-look"
+    camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="2" animation-loop="false"
+    camera-orbit="90.87deg 84.89deg 39.89m" field-of-view="12deg">
     <button class="Hotspot-1" slot="hotspot-1" data-surface="37 0 20 17 14 0.517 0.392 0.091"
       data-visibility-attribute="visible">
       <div class="HotspotAnnotation-1">Break down the barrier</div>
@@ -41,7 +41,7 @@
   </model-viewer>
 
   <!-- <model-viewer> 2 HTML element -->
-  <model-viewer src="cabin-open.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
+  <model-viewer src="assets/cabin-open.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
     poster="poster.webp" shadow-intensity="2">
     <button class="Hotspot" slot="hotspot-3" data-position="0.5587368153124733m -1.28391934377325m 1.7130842712307066m"
       data-normal="0.557102734654016m 0.5198146138952808m -0.6476336234491822m" data-visibility-attribute="visible">
@@ -72,14 +72,13 @@
     </div>
   </model-viewer>
 
-  <script src="script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
   <!-- Loads <model-viewer> for browsers: -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <footer>
-    
+
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

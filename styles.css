@@ -42,6 +42,9 @@ model-viewer {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
+
+  animation-name: "HandleAction.001";
+  animation-duration: 5s;
 }
 
 .Hotspot-1 {
