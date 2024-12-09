@@ -14,19 +14,27 @@
 $("#overlay").on("click", function () {
   console.log("You clicked on the screen");
   $("#overlay, #overlay-content").hide();
+  console.log("Available animations:", modelViewer.availableAnimations);
 });
 
 $(".Hotspot-3, .HotspotAnnotation-3").hide();
 $('.model-2').hide();
 
+
 const modelViewer = document.querySelector("model-viewer");
 
 // console.log(modelViewer.availableAnimations[0]);
 $(".Hotspot-1").on("click", function () {
-  console.log("You clicked on a hotspot");
+  console.log("You clicked on a the Axe");
   $(".Hotspot-1, .HotspotAnnotation-1").hide();
   modelViewer.animationName = "Axe";
   modelViewer.play({ repetitions: 1 });
+
+  console.log("Animation Name:", modelViewer.animationName);
+  setTimeout(() => {
+    console.log("Animation PlayState:", modelViewer.animationPlayState);
+  }, 5000);
+  console.log("Initial Animation State:", modelViewer.animationState);
 });
 
 // modelViewer.addEventListener("animation-finish", () => {
@@ -37,7 +45,7 @@ modelViewer.addEventListener('load', () => {
   console.log("Model has fully loaded.");
 
   $(".Hotspot-2").on("click", function () {
-    console.log("You clicked on the boards");
+    console.log("You clicked on the Boards");
     $(".Hotspot-2, .HotspotAnnotation-2").hide();
     modelViewer.animationName = "Boards";
     console.log("Animation name set to:", modelViewer.animationName);
@@ -56,17 +64,19 @@ modelViewer.addEventListener('load', () => {
         }
       });
       $(".Hotspot-3, .HotspotAnnotation-3").show();
-    });
+    }, 5000); // Check the animation state after 5 seconds
   });
 
   $(".Hotspot-3").on("click", function () {
-    console.log("You clicked on a the front door");
+    console.log("You clicked on a the Front Door");
     $(".Hotspot-3, .HotspotAnnotation-3").hide();
     modelViewer.animationName = "Front DoorAction";
     modelViewer.play({ repetitions: 1 });
 
-    $(".model-1, .HotspotAnnotation-4, .HotspotAnnotation-5, .HotspotAnnotation-6, .HotspotAnnotation-7, .HotspotAnnotation-8").hide();
-    $(".model-2").show();
+    setTimeout(() => {
+      $(".model-1, .HotspotAnnotation-4, .HotspotAnnotation-5, .HotspotAnnotation-6, .HotspotAnnotation-7, .HotspotAnnotation-8").hide();
+      $(".model-2").show();
+    }, 4000);
   });
 });
 

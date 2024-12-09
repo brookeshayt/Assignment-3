@@ -61,7 +61,7 @@ model-viewer2 {
   height: 24px;
   padding: 8px;
   position: relative;
-  transform: translate(-120px, 80px);
+  /* transform: translate(-120px, 80px); */
   transition: opacity 0.3s;
   width: 24px;
 }
@@ -76,7 +76,7 @@ model-viewer2 {
   height: 24px;
   padding: 8px;
   position: relative;
-  transform: translate(0px, 90px);
+  /* transform: translate(0px, 90px); */
   transition: opacity 0.3s;
   width: 24px;
 }
@@ -91,7 +91,7 @@ model-viewer2 {
   height: 24px;
   padding: 8px;
   position: relative;
-  transform: translate(0px, 90px);
+  /* transform: translate(0px, 90px); */
   transition: opacity 0.3s;
   width: 24px;
 }
