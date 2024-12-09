@@ -41,12 +41,16 @@ body {
 model-viewer {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
-
-  animation-name: "HandleAction.001";
-  animation-duration: 5s;
+  background-color: #091f3b;
 }
 
+model-viewer2 {
+  width: 100%;
+  height: 100%;
+  background-color: #091f3b;
+}
+
+/* All Hotspots */
 .Hotspot-1 {
   background: #fff;
   border-radius: 32px;
@@ -62,6 +66,90 @@ model-viewer {
 }
 
 .Hotspot-2 {
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot-3 {
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot-4 {
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot-5 {
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot-6 {
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot-7 {
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 24px;
+  padding: 8px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+}
+
+.Hotspot-8 {
   background: #fff;
   border-radius: 32px;
   border: 0;
@@ -96,6 +184,7 @@ model-viewer {
   transform: translateY(-50%);
 }
 
+/* All Annotations */
 .HotspotAnnotation-1 {
   background: #fff;
   border-radius: 4px;
@@ -115,6 +204,24 @@ model-viewer {
 }
 
 .HotspotAnnotation-2 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+}
+
+.HotspotAnnotation-3 {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
@@ -221,6 +328,7 @@ model-viewer {
   }
 }
 
+/* Model 1 */
 model-viewer>#ar-prompt {
   position: absolute;
   left: 50%;
@@ -237,11 +345,31 @@ model-viewer>#ar-prompt>img {
   animation: circle 4s linear infinite;
 }
 
-/* Second model */
-model-2 {
-  width: 100%;
-  height: 90%;
-  background-color: #ffffff;
+/* Model 2 */
+model-viewer2>#ar-prompt {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  animation: elongate 2s infinite ease-in-out alternate;
+  display: none;
 }
 
-footer {}
+model-viewer2[ar-status="session-started"]>#ar-prompt {
+  display: block;
+}
+
+model-viewer2>#ar-prompt>img {
+  animation: circle 4s linear infinite;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #091f3b;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}

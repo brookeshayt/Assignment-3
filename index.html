@@ -10,7 +10,6 @@
 </head>
 
 <body>
-  <p> Some 3D models found on TurboSquid </p>
   <div class="overlay" id="overlay">
     <div class="overlay-content" id="overlay-content">
       <h1>Survive the Night</h1>
@@ -20,14 +19,17 @@
   </div>
   <!-- <model-viewer> HTML element -->
   <model-viewer class="model" id="model-1" src="assets/Cabin.glb" ar ar-modes="webxr scene-viewer quick-look"
-    camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="2" animation-loop="false"
-    camera-orbit="90.87deg 84.89deg 39.89m" field-of-view="12deg">
-    <button class="Hotspot-1" slot="hotspot-1" data-surface="37 0 20 17 14 0.517 0.392 0.091"
+    camera-controls tone-mapping="neutral" poster="assets/poster.webp" shadow-intensity="2" animation-loop="false"
+    camera-orbit="90deg 80deg 81.41m" field-of-view="12deg">
+    <button class="Hotspot-1" slot="hotspot-1" data-surface="73 0 176 178 183 0.429 0.518 0.053"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation-1">Break down the barrier</div>
-    </button><button class="Hotspot-2" slot="hotspot-2" data-surface="74 0 67 70 75 0.165 0.536 0.299"
+      <div class="HotspotAnnotation-1">Axe</div>
+    </button><button class="Hotspot-2" slot="hotspot-2" data-surface="36 0 20 17 14 0.510 0.351 0.139"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation-2">Pick up the Axe</div>
+      <div class="HotspotAnnotation-2">Barrier</div>
+    </button><button class="Hotspot-3" slot="hotspot-3" data-surface="36 0 20 23 17 0.297 0.164 0.539"
+      data-visibility-attribute="visible">
+      <div class="HotspotAnnotation-3">Step Inside</div>
     </button>
     <div class="progress-bar hide" slot="progress-bar">
       <div class="update-bar"></div>
@@ -36,46 +38,47 @@
       View in your space
     </button>
     <div id="ar-prompt">
-      <img src="ar_hand_prompt.png">
+      <img src="assets/ar_hand_prompt.png">
     </div>
   </model-viewer>
 
   <!-- <model-viewer> 2 HTML element -->
-  <model-viewer src="assets/cabin-open.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral"
-    poster="poster.webp" shadow-intensity="2">
-    <button class="Hotspot" slot="hotspot-3" data-position="0.5587368153124733m -1.28391934377325m 1.7130842712307066m"
-      data-normal="0.557102734654016m 0.5198146138952808m -0.6476336234491822m" data-visibility-attribute="visible">
-      <div class="HotspotAnnotation-3">Pick up
-        backpack</div>
-    </button><button class="Hotspot-4" slot="hotspot-4"
-      data-position="-0.1772868034910502m -0.9882544100359159m -0.5381419411511008m"
-      data-normal="-5.5126320585462406e-8m 0.9999999999999984m -7.585579054618309e-15m"
+  <model-viewer2 src="assets/cabin-open.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="assets/poster.webp" shadow-intensity="1" animation-name="Match.001Action"
+    camera-target="-20.41m -1.77m 0.5978m" camera-orbit="-268.6deg 88.2deg 39.8m" field-of-view="12deg"
+    environment-image="legacy">
+
+    <button class="Hotspot-4" slot="hotspot-1" data-surface="98 0 78 6631 26 0.175 0.603 0.222"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation-4">Turn on the flashlight</div>
-    </button><button class="Hotspot-5" slot="hotspot-5"
-      data-position="-2.719512052851293m -0.28048867752150386m -0.8184712754597401m"
-      data-normal="0.880840722513031m 0.2931751424371775m -0.37170950676524567m" data-visibility-attribute="visible">
-      <div class="HotspotAnnotation-5">Put the bow in your inventory</div>
-    </button><button class="Hotspot-6" slot="hotspot-6"
-      data-position="0.11508704312097251m -0.7036207201093312m 1.746407875644377m"
-      data-normal="0.9992154189389164m -0.03898776493668286m 0.006964247264984743m" data-visibility-attribute="visible">
-      <div class="HotspotAnnotation-6">A box of matches</div>
+      <div class="HotspotAnnotation">Backpack</div>
+    </button><button class="Hotspot-5" slot="hotspot-2" data-surface="125 0 346 363 351 0.260 0.329 0.411"
+      data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Flashlight</div>
+    </button><button class="Hotspot-6" slot="hotspot-3" data-surface="212 0 14 17 4 0.065 0.325 0.611"
+      data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Match set</div>
+    </button><button class="Hotspot-7" slot="hotspot-4" data-surface="78 0 18 22 23 0.299 0.365 0.335"
+      data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Flip the page</div>
+    </button><button class="Hotspot-8" slot="hotspot-5" data-surface="66 0 1589 1592 1596 0.208 0.227 0.565"
+      data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Bow</div>
     </button>
-    <div class="progress-bar hide" slot="progress-bar">
-      <div class="update-bar"></div>
-    </div>
-    <button slot="ar-button" id="ar-button">
-      View in your space
-    </button>
+
     <div id="ar-prompt">
       <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
-  </model-viewer>
+  </model-viewer2>
 
   <!-- Loads <model-viewer> for browsers: -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <footer>
-
+    <div>
+      <p> Brooke Thibault 2024</p>
+    </div>
+    <div>
+      <p> Some models sourced from Turbosquid</p>
+    </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
