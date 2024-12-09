@@ -18,9 +18,10 @@
     </div>
   </div>
   <!-- <model-viewer> HTML element -->
-  <model-viewer class="model" id="model-1" src="assets/Cabin.glb" ar ar-modes="webxr scene-viewer quick-look"
-    camera-controls tone-mapping="neutral" poster="assets/poster.webp" shadow-intensity="2" animation-loop="false"
+  <model-viewer class="model-1" src="assets/Cabin.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="assets/poster.webp" shadow-intensity="2" animation-loop="false"
     camera-orbit="90deg 80deg 81.41m" field-of-view="12deg">
+
     <button class="Hotspot-1" slot="hotspot-1" data-surface="73 0 176 178 183 0.429 0.518 0.053"
       data-visibility-attribute="visible">
       <div class="HotspotAnnotation-1">Axe</div>
@@ -43,32 +44,31 @@
   </model-viewer>
 
   <!-- <model-viewer> 2 HTML element -->
-  <model-viewer2 src="assets/cabin-open.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-    tone-mapping="neutral" poster="assets/poster.webp" shadow-intensity="1" animation-name="Match.001Action"
-    camera-target="-20.41m -1.77m 0.5978m" camera-orbit="-268.6deg 88.2deg 39.8m" field-of-view="12deg"
-    environment-image="legacy">
+  <model-viewer class="model-2" src="/assets/cabin-open.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="assets/poster.webp" shadow-intensity="1" camera-orbit="90deg 80deg 81.41m"
+    field-of-view="12deg" max-field-of-view="100deg" environment-image="legacy">
 
-    <button class="Hotspot-4" slot="hotspot-1" data-surface="98 0 78 6631 26 0.175 0.603 0.222"
+    <button class="Hotspot-4" slot="hotspot-1" data-surface="98 0 2670 2927 2919 0.223 0.419 0.358"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation">Backpack</div>
-    </button><button class="Hotspot-5" slot="hotspot-2" data-surface="125 0 346 363 351 0.260 0.329 0.411"
+      <div class="HotspotAnnotation-4">Bow</div>
+    </button><button class="Hotspot-5" slot="hotspot-2" data-surface="125 0 346 363 351 0.281 0.053 0.665"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation">Flashlight</div>
-    </button><button class="Hotspot-6" slot="hotspot-3" data-surface="212 0 14 17 4 0.065 0.325 0.611"
+      <div class="HotspotAnnotation-5">Backpack</div>
+    </button><button class="Hotspot-6" slot="hotspot-3" data-surface="52 0 0 1 3 0.235 0.062 0.703"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation">Match set</div>
-    </button><button class="Hotspot-7" slot="hotspot-4" data-surface="78 0 18 22 23 0.299 0.365 0.335"
+      <div class="HotspotAnnotation-6">Matches</div>
+    </button><button class="Hotspot-7" slot="hotspot-4" data-surface="81 0 717 36 35 0.418 0.101 0.481"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation">Flip the page</div>
-    </button><button class="Hotspot-8" slot="hotspot-5" data-surface="66 0 1589 1592 1596 0.208 0.227 0.565"
+      <div class="HotspotAnnotation-7">Book</div>
+    </button><button class="Hotspot-8" slot="hotspot-5" data-surface="66 0 1612 1617 1621 0.715 0.090 0.195"
       data-visibility-attribute="visible">
-      <div class="HotspotAnnotation">Bow</div>
+      <div class="HotspotAnnotation-8">Flashlight</div>
     </button>
 
     <div id="ar-prompt">
       <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
-  </model-viewer2>
+  </model-viewer>
 
   <!-- Loads <model-viewer> for browsers: -->
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>

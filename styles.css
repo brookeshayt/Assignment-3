@@ -61,6 +61,7 @@ model-viewer2 {
   height: 24px;
   padding: 8px;
   position: relative;
+  transform: translate(-120px, 80px);
   transition: opacity 0.3s;
   width: 24px;
 }
@@ -75,6 +76,7 @@ model-viewer2 {
   height: 24px;
   padding: 8px;
   position: relative;
+  transform: translate(0px, 90px);
   transition: opacity 0.3s;
   width: 24px;
 }
@@ -89,78 +91,80 @@ model-viewer2 {
   height: 24px;
   padding: 8px;
   position: relative;
+  transform: translate(0px, 90px);
   transition: opacity 0.3s;
   width: 24px;
 }
 
 .Hotspot-4 {
-  background: #fff;
+  background: #ffffffb3;
   border-radius: 32px;
   border: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
+  height: 12px;
   padding: 8px;
   position: relative;
+  transform: translate(30px, 30px);
   transition: opacity 0.3s;
-  width: 24px;
+  width: 12px;
 }
 
 .Hotspot-5 {
-  background: #fff;
+  background: #ffffffb3;
   border-radius: 32px;
   border: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
+  height: 12px;
   padding: 8px;
   position: relative;
   transition: opacity 0.3s;
-  width: 24px;
+  width: 12px;
 }
 
 .Hotspot-6 {
-  background: #fff;
+  background: #ffffffb3;
   border-radius: 32px;
   border: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
+  height: 12px;
   padding: 8px;
   position: relative;
   transition: opacity 0.3s;
-  width: 24px;
+  width: 12px;
 }
 
 .Hotspot-7 {
-  background: #fff;
+  background: #ffffffb3;
   border-radius: 32px;
   border: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
+  height: 12px;
   padding: 8px;
   position: relative;
   transition: opacity 0.3s;
-  width: 24px;
+  width: 12px;
 }
 
 .Hotspot-8 {
-  background: #fff;
+  background: #ffffffb3;
   border-radius: 32px;
   border: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
+  height: 12px;
   padding: 8px;
   position: relative;
   transition: opacity 0.3s;
-  width: 24px;
+  width: 12px;
 }
 
 .Hotspot:not([data-visible]) {
@@ -222,6 +226,96 @@ model-viewer2 {
 }
 
 .HotspotAnnotation-3 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+}
+
+.HotspotAnnotation-4 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+}
+
+.HotspotAnnotation-5 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+}
+
+.HotspotAnnotation-6 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+}
+
+.HotspotAnnotation-7 {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  left: calc(100% + 1em);
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  top: 50%;
+  width: max-content;
+}
+
+.HotspotAnnotation-8 {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);

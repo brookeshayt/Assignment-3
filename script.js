@@ -17,6 +17,7 @@ $("#overlay").on("click", function () {
 });
 
 $(".Hotspot-3, .HotspotAnnotation-3").hide();
+$('.model-2').hide();
 
 const modelViewer = document.querySelector("model-viewer");
 
@@ -38,7 +39,7 @@ modelViewer.addEventListener('load', () => {
   $(".Hotspot-2").on("click", function () {
     console.log("You clicked on the boards");
     $(".Hotspot-2, .HotspotAnnotation-2").hide();
-    modelViewer.animationName = "board1Action";
+    modelViewer.animationName = "Boards";
     console.log("Animation name set to:", modelViewer.animationName);
     modelViewer.play({ repetitions: 1 });
 
@@ -64,19 +65,39 @@ modelViewer.addEventListener('load', () => {
     modelViewer.animationName = "Front DoorAction";
     modelViewer.play({ repetitions: 1 });
 
-    $(modelViewer).hide();
-
-    const newModelViewer = $('<model-viewer></model-viewer>');
-    newModelViewer.attr('src', 'assets/cabin-open.glb');
-    newModelViewer.attr('alt', '3D model');
-    newModelViewer.attr('camera-controls', true);
-
-    // Append the new model viewer to the desired parent element
-    $('model-viewer2').append(newModelViewer);  // or another container, like $('#container')
-
-    // Show the new model viewer
-    newModelViewer.show();
+    $(".model-1, .HotspotAnnotation-4, .HotspotAnnotation-5, .HotspotAnnotation-6, .HotspotAnnotation-7, .HotspotAnnotation-8").hide();
+    $(".model-2").show();
   });
+});
+
+$(".Hotspot-4").on("click", function () {
+  console.log("You clicked on a the Bow");
+  $(".HotspotAnnotation-5, .HotspotAnnotation-6, .HotspotAnnotation-7, .HotspotAnnotation-8").hide();
+  $(".HotspotAnnotation-4").show();
+});
+
+$(".Hotspot-5").on("click", function () {
+  console.log("You clicked on a the Backpack");
+  $(".HotspotAnnotation-4, .HotspotAnnotation-6, .HotspotAnnotation-7, .HotspotAnnotation-8").hide();
+  $(".HotspotAnnotation-5").show();
+});
+
+$(".Hotspot-6").on("click", function () {
+  console.log("You clicked on a the Matches");
+  $(".HotspotAnnotation-4, .HotspotAnnotation-5, .HotspotAnnotation-7, .HotspotAnnotation-8").hide();
+  $(".HotspotAnnotation-6").show();
+});
+
+$(".Hotspot-7").on("click", function () {
+  console.log("You clicked on a the Book");
+  $(".HotspotAnnotation-4, .HotspotAnnotation-5, .HotspotAnnotation-6, .HotspotAnnotation-8").hide();
+  $(".HotspotAnnotation-7").show();
+});
+
+$(".Hotspot-8").on("click", function () {
+  console.log("You clicked on a the Flashlight");
+  $(".HotspotAnnotation-4, .HotspotAnnotation-5, .HotspotAnnotation-6, .HotspotAnnotation-7").hide();
+  $(".HotspotAnnotation-8").show();
 });
 
 //   modelViewer.addEventListener('animation-finish', () => {
@@ -90,27 +111,6 @@ modelViewer.addEventListener('load', () => {
 //       console.log("Pausing the animation manually after one playthrough.");
 //       modelViewer.animationPlayState = 'paused';  }
 //   }, 5000); // Check animation state after 5 seconds (you can adjust this)
-// });
-
-
-//Model 2
-// const modelViewer2 = document.querySelector(".model-viewer");
-
-// $(".Hotspot-3").on("click", function () {
-//   console.log("You clicked on a the front door");
-//   modelViewer.animationName = "Front DoorAction";
-//   modelViewer.fadeOut();
-//   modelViewer2.show();
-//   setTimeout(() => {
-//     // Check if the animation has started
-//     const playState = modelViewer2.animationPlayState;
-//     console.log("Current animation play state:", playState); // Log the play state
-
-//     if (playState === 'running') {
-//       console.log("Pausing the animation manually after one playthrough.");
-//       modelViewer2.animationPlayState = 'paused'; // Pause the animation manually
-//     }
-//   }, 5000); // Check after 5 seconds to give the animation time to complete
 // });
 
 // document.querySelector('model-viewer').addEventListener('progress', onProgress);
